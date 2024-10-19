@@ -1,0 +1,311 @@
+Script started on 2024-01-30 23:35:43-07:00 [TERM="xterm-256color" TTY="/dev/pts/9" COLUMNS="132" LINES="64"]
+
+Disk quotas for user ***** (uid *****): 
+     Filesystem   space   quota   limit   grace   files   quota   limit   grace
+*****:/CSUSERS
+                  1320M  10240M  10240M           13672    100k    100k        
+
+]0;*****@csa2:~/cpsc355/a1 [?2004h[UC *****@csa2 a1] nano assign1b.asmls[Kcd a1cpsc355/nano assign1b.asm[7P./assign1bgcc assign1b.s -o assign1b[11Pnano assign1b.s[5P./assign1bgcc assign1b.s -o assign1bm4 assign1b.asm > assign1b.s[11Pnano assign1b.asm[7P./assign1bls[Kclear[K[K[K[K[K gcc assign1.a[K[Ka.s -o assign1a
+[?2004l
+]0;shaikhsajid.mahmood@csa2:~/cpsc355/a1 [?2004h[UC *****@csa2 a1] gdb assign1a
+[?2004l
+[35;1mGNU gdb (GDB) Fedora Linux 13.2-6.fc38[m
+Copyright (C) 2023 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <[32mhttp://gnu.org/licenses/gpl.html[m>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "aarch64-redhat-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+[32m<https://www.gnu.org/software/gdb/bugs/>[m.
+Find the GDB manual and other documentation resources online at:
+    <[32mhttp://www.gnu.org/software/gdb/documentation/[m>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from [32massign1a[m...
+
+This GDB supports auto-downloading debuginfo from the following URLs:
+  <[32mhttps://debuginfod.fedoraproject.org/[m>
+[?2004hEnable debuginfod for this session? (y or [n]) y
+[?2004l
+Debuginfod has been enabled.
+To make this setting permanent, add 'set debuginfod enabled on' to .gdbinit.
+
+                                                                                                                                    
+(No debugging symbols found in [32massign1a[m)
+[?2004h(gdb) break main
+[?2004l
+Breakpoint 1 at [34m0x4101ec[m
+[?2004h(gdb) r
+[?2004l
+Starting program: [32m/home/csusers/*****/cpsc355/a1/assign1a[m 
+
+                                                                                                                                    
+
+                                                                                                                                    
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "[32m/lib64/libthread_db.so.1[m".
+
+Breakpoint 1, [34m0x00000000004101ec[m in [33mmain[m ()
+[?2004h[?2004l
+[?2004h(gdb) display/i $pc
+[?2004l
+1: x/i $pc
+=> [34m0x4101ec[m <[33mmain[m+8>:	[32mmov[m	[31mx19[m, [34m#0x2710                [m[37;2m	// #10000[m
+[?2004h(gdb) ni
+[?2004l
+[34m0x00000000004101f0[m in [33mmain[m ()
+1: x/i $pc
+=> [34m0x4101f0[m <[33mmain[m+12>:	[32mmov[m	[31mx20[m, [34m#0x0                   [m[37;2m	// #0[m
+[?2004h[?2004l
+[?2004h(gdb) ni
+[?2004l
+[34m0x00000000004101f4[m in [33mmain[m ()
+1: x/i $pc
+=> [34m0x4101f4[m <[33mmain[m+16>:	[32mmov[m	[31mx21[m, [34m#0x0                   [m[37;2m	// #0[m
+[?2004h[?2004l
+[?2004h(gdb) ni
+[?2004l
+[34m0x00000000004101f8[m in [33mmain[m ()
+1: x/i $pc
+=> [34m0x4101f8[m <[33mmain[m+20>:	[32mmov[m	[31mx22[m, [34m#0xfffffffffffffff6    [m[37;2m	// #-10[m
+[?2004h[?2004l
+[?2004h(gdb) ni
+[?2004l
+[34m0x00000000004101fc[m in [33mloop[m ()
+1: x/i $pc
+=> [34m0x4101fc[m <[33mloop[m>:	[32mcmp[m	[31mx22[m, [34m#0x4[m
+[?2004h[?2004l
+[?2004h(gdb) ni
+[?2004l
+[34m0x0000000000410200[m in [33mloop[m ()
+1: x/i $pc
+=> [34m0x410200[m <[33mloop[m+4>:	[32mb.gt[m	[34m0x410288[m <[33mendLoop[m>
+[?2004h[?2004l
+[?2004h(gdb) ni
+[?2004l
+[34m0x0000000000410204[m in [33mloop[m ()
+1: x/i $pc
+=> [34m0x410204[m <[33mloop[m+8>:	[32mmul[m	[31mx23[m, [31mx22[m, [31mx22[m
+[?2004h[?2004l
+[?2004h(gdb) ni
+[?2004l
+[34m0x0000000000410208[m in [33mloop[m ()
+1: x/i $pc
+=> [34m0x410208[m <[33mloop[m+12>:	[32mmul[m	[31mx23[m, [31mx23[m, [31mx22[m
+[?2004h[?2004l
+[?2004h(gdb) ni
+[?2004l
+[34m0x000000000041020c[m in [33mloop[m ()
+1: x/i $pc
+=> [34m0x41020c[m <[33mloop[m+16>:	[32mmov[m	[31mx24[m, [34m#0x3                   [m[37;2m	// #3[m
+[?2004h[?2004l
+[?2004h(gdb) ni
+[?2004l
+[34m0x0000000000410210[m in [33mloop[m ()
+1: x/i $pc
+=> [34m0x410210[m <[33mloop[m+20>:	[32mmul[m	[31mx25[m, [31mx23[m, [31mx24[m
+[?2004h[?2004l
+[?2004h(gdb) ni
+[?2004l
+[34m0x0000000000410214[m in [33mloop[m ()
+1: x/i $pc
+=> [34m0x410214[m <[33mloop[m+24>:	[32mmul[m	[31mx23[m, [31mx22[m, [31mx22[m
+[?2004h[?2004l
+[?2004h(gdb) ni
+[?2004l
+[34m0x0000000000410218[m in [33mloop[m ()
+1: x/i $pc
+=> [34m0x410218[m <[33mloop[m+28>:	[32mmov[m	[31mx24[m, [34m#0x1f                  [m[37;2m	// #31[m
+[?2004h[?2004l
+[?2004h(gdb) ni
+[?2004l
+[34m0x000000000041021c[m in [33mloop[m ()
+1: x/i $pc
+=> [34m0x41021c[m <[33mloop[m+32>:	[32mmul[m	[31mx24[m, [31mx24[m, [31mx23[m
+[?2004h[?2004l
+[?2004h(gdb) ni
+[?2004l
+[34m0x0000000000410220[m in [33mloop[m ()
+1: x/i $pc
+=> [34m0x410220[m <[33mloop[m+36>:	[32madd[m	[31mx25[m, [31mx25[m, [31mx24[m
+[?2004h[?2004l
+[?2004h(gdb) ni
+[?2004l
+[34m0x0000000000410224[m in [33mloop[m ()
+1: x/i $pc
+=> [34m0x410224[m <[33mloop[m+40>:	[32mmov[m	[31mx23[m, [34m#0xfffffffffffffff1    [m[37;2m	// #-15[m
+[?2004h[?2004l
+[?2004h(gdb) nii[K
+[?2004l
+[34m0x0000000000410228[m in [33mloop[m ()
+1: x/i $pc
+=> [34m0x410228[m <[33mloop[m+44>:	[32mmul[m	[31mx23[m, [31mx23[m, [31mx22[m
+[?2004h[?2004l
+[?2004h(gdb) ni
+[?2004l
+[34m0x000000000041022c[m in [33mloop[m ()
+1: x/i $pc
+=> [34m0x41022c[m <[33mloop[m+48>:	[32madd[m	[31mx25[m, [31mx25[m, [31mx23[m
+[?2004h[?2004l
+[?2004h(gdb) ni
+[?2004l
+[34m0x0000000000410230[m in [33mloop[m ()
+1: x/i $pc
+=> [34m0x410230[m <[33mloop[m+52>:	[32msub[m	[31mx25[m, [31mx25[m, [34m#0x7f[m
+[?2004h[?2004l
+[?2004h(gdb) ni
+[?2004l
+[34m0x0000000000410234[m in [33mloop[m ()
+1: x/i $pc
+=> [34m0x410234[m <[33mloop[m+56>:	[32mcmp[m	[31mx19[m, [31mx25[m
+[?2004h[?2004l
+[?2004h(gdb) ni
+[?2004l
+[34m0x0000000000410238[m in [33mloop[m ()
+1: x/i $pc
+=> [34m0x410238[m <[33mloop[m+60>:	[32mb.le[m	[34m0x410268[m <[33mnext[m>
+[?2004h[?2004l
+[?2004h(gdb) ni
+[?2004l
+[34m0x000000000041023c[m in [33mloop[m ()
+1: x/i $pc
+=> [34m0x41023c[m <[33mloop[m+64>:	[32mmov[m	[31mx19[m, [31mx25[m
+[?2004h[?2004l
+[?2004h(gdb) ni
+[?2004l
+[34m0x0000000000410240[m in [33mloop[m ()
+1: x/i $pc
+=> [34m0x410240[m <[33mloop[m+68>:	[32mmov[m	[31mx20[m, [31mx22[m
+[?2004h[?2004l
+[?2004h(gdb) ni
+[?2004l
+[34m0x0000000000410244[m in [33mloop[m ()
+1: x/i $pc
+=> [34m0x410244[m <[33mloop[m+72>:	[32mmov[m	[31mx21[m, [31mx25[m
+[?2004h[?2004l
+[?2004h(gdb) ni
+[?2004l
+[34m0x0000000000410248[m in [33mloop[m ()
+1: x/i $pc
+=> [34m0x410248[m <[33mloop[m+76>:	[32madrp[m	[31mx0[m, [34m0x410000[m <[33m_init[m>
+[?2004h[?2004l
+[?2004h(gdb) ni
+[?2004l
+[34m0x000000000041024c[m in [33mloop[m ()
+1: x/i $pc
+=> [34m0x41024c[m <[33mloop[m+80>:	[32madd[m	[31mx0[m, [31mx0[m, [34m#0x1a8[m
+[?2004h[?2004l
+[?2004h(gdb) ni
+[?2004l
+[34m0x0000000000410250[m in [33mloop[m ()
+1: x/i $pc
+=> [34m0x410250[m <[33mloop[m+84>:	[32mmov[m	[31mx1[m, [31mx22[m
+[?2004h[?2004l
+[?2004h(gdb) ni
+[?2004l
+[34m0x0000000000410254[m in [33mloop[m ()
+1: x/i $pc
+=> [34m0x410254[m <[33mloop[m+88>:	[32mmov[m	[31mx2[m, [31mx25[m
+[?2004h[?2004l
+[?2004h(gdb) ni
+[?2004l
+[34m0x0000000000410258[m in [33mloop[m ()
+1: x/i $pc
+=> [34m0x410258[m <[33mloop[m+92>:	[32mmov[m	[31mx3[m, [31mx19[m
+[?2004h[?2004l
+[?2004h(gdb) ni
+[?2004l
+[34m0x000000000041025c[m in [33mloop[m ()
+1: x/i $pc
+=> [34m0x41025c[m <[33mloop[m+96>:	[32mbl[m	[34m0x410070[m <[33mprintf@plt[m>
+[?2004h[?2004l
+[?2004h(gdb) ni
+[?2004l
+value of x: -10
+value of y: 123
+current minimum y value: 123
+
+[34m0x0000000000410260[m in [33mloop[m ()
+1: x/i $pc
+=> [34m0x410260[m <[33mloop[m+100>:	[32madd[m	[31mx22[m, [31mx22[m, [34m#0x1[m
+[?2004h[?2004l
+[?2004h(gdb) ni[K[Kp/d x[K$x22
+[?2004l
+$1 = -10
+[?2004h(gdb) p/d x24[K5[K[K[K$x25
+[?2004l
+$2 = 123
+[?2004h(gdb) p/d $x19
+[?2004l
+$3 = 123
+[?2004h(gdb) c
+[?2004l
+Continuing.
+value of x: -9
+value of y: 332
+current minimum y value: 123
+
+value of x: -8
+value of y: 441
+current minimum y value: 123
+
+value of x: -7
+value of y: 468
+current minimum y value: 123
+
+value of x: -6
+value of y: 431
+current minimum y value: 123
+
+value of x: -5
+value of y: 348
+current minimum y value: 123
+
+value of x: -4
+value of y: 237
+current minimum y value: 123
+
+value of x: -3
+value of y: 116
+current minimum y value: 116
+
+value of x: -2
+value of y: 3
+current minimum y value: 3
+
+value of x: -1
+value of y: -84
+current minimum y value: -84
+
+value of x: 0
+value of y: -127
+current minimum y value: -127
+
+value of x: 1
+value of y: -108
+current minimum y value: -127
+
+value of x: 2
+value of y: -9
+current minimum y value: -127
+
+value of x: 3
+value of y: 188
+current minimum y value: -127
+
+value of x: 4
+value of y: 501
+current minimum y value: -127
+
+[Inferior 1 (process 591402) exited with code 075]
+[?2004h[?2004l
+[?2004h(gdb) q
+[?2004l
+]0;*****@csa2:~/cpsc355/a1 [?2004h[UC *****@csa2 a1] exit
+[?2004l
+exit
+
+Script done on 2024-01-30 23:39:48-07:00 [COMMAND_EXIT_CODE="0"]

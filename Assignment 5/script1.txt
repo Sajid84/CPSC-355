@@ -1,0 +1,150 @@
+Script started on 2024-03-29 23:25:54-06:00 [TERM="xterm-256color" TTY="/dev/pts/73" COLUMNS="168" LINES="46"]
+
+Disk quotas for user ***** (uid *****):
+     Filesystem   space   quota   limit   grace   files   quota   limit   grace
+*****:/CSUSERS
+                  1344M  10240M  10240M           13969    100k    100k
+
+^[]0;*****@csa2:~/cpsc355/a5^G^[[?2004h[UC *****@csa2 a5] ^[[7mm4 a5a.asm > a5a.s^[[27m^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^Hm4 a5a.asm > a5a.s
+^[[?2004l^M^[]0;*****@csa2:~/cpsc355/a5^G^[[?2004h[UC *****@csa2 a5] ^[[7mas a5a.s -o a5a.o^[[27m^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^Has a5a.s -o a5a.o
+^[[?2004l^M^[]0;*****@csa2:~/cpsc355/a5^G^[[?2004h[UC *****@csa2 a5] ^[[7mgcc -c a5aMain.c^[[27m^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^Hgcc -c a5aMain.c
+^[[?2004l^M^[]0;*****@csa2:~/cpsc355/a5^G^[[?2004h[UC *****@csa2 a5] ^[[7mgcc a5a.o a5aMain.o -o a5a^[[27m^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^Hgcc a5a.o a5aMain.o -o a5a
+^[[?2004l^M^[]0;*****@csa2:~/cpsc355/a5^G^[[?2004h[UC *****@csa2 a5] ./a5a
+^[[?2004l^M^[[H^[[2J^[[3J### Queue Operations ###
+
+Press 1 - Enqueue, 2 - Dequeue, 3 - Display, 4 - Exit
+Your option? 2
+
+Queue underflow! Cannot dequeue from an empty queue.
+
+Press the return key to continue . . .
+^[[H^[[2J^[[3J### Queue Operations ###
+
+Press 1 - Enqueue, 2 - Dequeue, 3 - Display, 4 - Exit
+Your option? 1
+
+Enter the positive integer value to be enqueued: 1
+
+Press the return key to continue . . .
+^[[H^[[2J^[[3J### Queue Operations ###
+
+Press 1 - Enqueue, 2 - Dequeue, 3 - Display, 4 - Exit
+Your option? 1
+
+Enter the positive integer value to be enqueued: 2
+
+Press the return key to continue . . .
+^[[H^[[2J^[[3J### Queue Operations ###
+
+Press 1 - Enqueue, 2 - Dequeue, 3 - Display, 4 - Exit
+Your option? 1
+
+Enter the positive integer value to be enqueued: 3
+
+Press the return key to continue . . .
+^[[H^[[2J^[[3J### Queue Operations ###
+
+Press 1 - Enqueue, 2 - Dequeue, 3 - Display, 4 - Exit
+Your option? 1
+
+Enter the positive integer value to be enqueued: 4
+
+Press the return key to continue . . .
+^[[H^[[2J^[[3J### Queue Operations ###
+
+Press 1 - Enqueue, 2 - Dequeue, 3 - Display, 4 - Exit
+Your option? 1
+
+Enter the positive integer value to be enqueued: 5
+
+Press the return key to continue . . .
+^[[H^[[2J^[[3J### Queue Operations ###
+
+Press 1 - Enqueue, 2 - Dequeue, 3 - Display, 4 - Exit
+Your option? 1
+
+Enter the positive integer value to be enqueued: 6
+
+Press the return key to continue . . .
+^[[H^[[2J^[[3J### Queue Operations ###
+
+Press 1 - Enqueue, 2 - Dequeue, 3 - Display, 4 - Exit
+Your option? 1
+
+Enter the positive integer value to be enqueued: 7
+
+Press the return key to continue . . .
+^[[H^[[2J^[[3J### Queue Operations ###
+
+Press 1 - Enqueue, 2 - Dequeue, 3 - Display, 4 - Exit
+Your option? 1
+
+Enter the positive integer value to be enqueued: 8
+
+Press the return key to continue . . .
+^[[H^[[2J^[[3J### Queue Operations ###
+
+Press 1 - Enqueue, 2 - Dequeue, 3 - Display, 4 - Exit
+Your option? 1
+
+Enter the positive integer value to be enqueued: 9
+
+Queue overflow! Cannot enqueue into a full queue.
+
+Press the return key to continue . . .
+^[[H^[[2J^[[3J### Queue Operations ###
+
+Press 1 - Enqueue, 2 - Dequeue, 3 - Display, 4 - Exit
+Your option? 3
+
+Current queue contents:
+ 1 <-- head of queue
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8 <-- tail of queue
+
+Press the return key to continue . . .
+^[[H^[[2J^[[3J### Queue Operations ###
+
+Press 1 - Enqueue, 2 - Dequeue, 3 - Display, 4 - Exit
+Your option? 2
+
+Dequeued value is 1
+
+Press the return key to continue . . .
+^[[H^[[2J^[[3J### Queue Operations ###
+
+Press 1 - Enqueue, 2 - Dequeue, 3 - Display, 4 - Exit
+Your option? 2
+
+Dequeued value is 2
+
+Press the return key to continue . . .
+^[[H^[[2J^[[3J### Queue Operations ###
+
+Press 1 - Enqueue, 2 - Dequeue, 3 - Display, 4 - Exit
+Your option? 3
+
+Current queue contents:
+ 3 <-- head of queue
+ 4
+ 5
+ 6
+ 7
+ 8 <-- tail of queue
+
+Press the return key to continue . . .
+^[[H^[[2J^[[3J### Queue Operations ###
+
+Press 1 - Enqueue, 2 - Dequeue, 3 - Display, 4 - Exit
+Your option? 4
+
+Terminating program
+^[]0;*****@csa2:~/cpsc355/a5^G^[[?2004h[UC *****@csa2 a5] exit
+^[[?2004l^Mexit
+
+Script done on 2024-03-29 23:27:23-06:00 [COMMAND_EXIT_CODE="0"]

@@ -1,0 +1,132 @@
+Script started on 2024-01-30 23:44:09-07:00 [TERM="xterm-256color" TTY="/dev/pts/9" COLUMNS="132" LINES="64"]
+
+Disk quotas for user ***** (uid *****): 
+     Filesystem   space   quota   limit   grace   files   quota   limit   grace
+*****:/CSUSERS
+                  1320M  10240M  10240M           13675    100k    100k        
+
+]0;*****@csa2:~/cpsc355/a1 [?2004h[UC *****@csa2 a1] m4 assign1b.s[Kas,[Km > assign1b.s
+[?2004l
+]0;*****@csa2:~/cpsc355/a1 [?2004h[UC *****@csa2 a1] gcc assign1b.s -o assign1b
+[?2004l
+]0;*****@csa2:~/cpsc355/a1 [?2004h[UC *****@csa2 a1] gdb assign1b
+[?2004l
+[35;1mGNU gdb (GDB) Fedora Linux 13.2-6.fc38[m
+Copyright (C) 2023 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <[32mhttp://gnu.org/licenses/gpl.html[m>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "aarch64-redhat-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+[32m<https://www.gnu.org/software/gdb/bugs/>[m.
+Find the GDB manual and other documentation resources online at:
+    <[32mhttp://www.gnu.org/software/gdb/documentation/[m>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from [32massign1b[m...
+
+This GDB supports auto-downloading debuginfo from the following URLs:
+  <[32mhttps://debuginfod.fedoraproject.org/[m>
+[?2004hEnable debuginfod for this session? (y or [n]) y
+[?2004l
+Debuginfod has been enabled.
+To make this setting permanent, add 'set debuginfod enabled on' to .gdbinit.
+
+                                                                                                                                    
+(No debugging symbols found in [32massign1b[m)
+[?2004h(gdb) break loop[K[K[K[KendLoop
+[?2004l
+Breakpoint 1 at [34m0x410258[m
+[?2004h(gdb) r
+[?2004l
+Starting program: [32m/home/csusers/*****/cpsc355/a1/assign1b[m 
+Downloading separate debug info for [32msystem-supplied DSO at 0xfffff7ffb000[m
+
+[###                                                                                                                             ]
+                                                                                                                                    
+
+                                                                                                                                    
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "[32m/lib64/libthread_db.so.1[m".
+value of x: -10
+value of y: 123
+current minimum y value: 123
+
+value of x: -9
+value of y: 332
+current minimum y value: 123
+
+value of x: -8
+value of y: 441
+current minimum y value: 123
+
+value of x: -7
+value of y: 468
+current minimum y value: 123
+
+value of x: -6
+value of y: 431
+current minimum y value: 123
+
+value of x: -5
+value of y: 348
+current minimum y value: 123
+
+value of x: -4
+value of y: 237
+current minimum y value: 123
+
+value of x: -3
+value of y: 116
+current minimum y value: 116
+
+value of x: -2
+value of y: 3
+current minimum y value: 3
+
+value of x: -1
+value of y: -84
+current minimum y value: -84
+
+value of x: 0
+value of y: -127
+current minimum y value: -127
+
+value of x: 1
+value of y: -108
+current minimum y value: -127
+
+value of x: 2
+value of y: -9
+current minimum y value: -127
+
+value of x: 3
+value of y: 188
+current minimum y value: -127
+
+value of x: 4
+value of y: 501
+current minimum y value: -127
+
+
+Breakpoint 1, [34m0x0000000000410258[m in [33mendLoop[m ()
+[?2004h[?2004l
+[?2004h(gdb) p/d $x18[K9
+[?2004l
+$1 = -127
+[?2004h(gdb) q
+[?2004l
+[?2004hA debugging session is active.
+
+	Inferior 1 [process 592474] will be killed.
+
+Quit anyway? (y or n) exit[K[K[K[Ky
+[?2004l
+]0;*****@csa2:~/cpsc355/a1 [?2004h[UC *****@csa2 a1] exit
+[?2004l
+exit
+
+Script done on 2024-01-30 23:45:19-07:00 [COMMAND_EXIT_CODE="0"]

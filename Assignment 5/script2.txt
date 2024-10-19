@@ -1,0 +1,23 @@
+Script started on 2024-03-29 23:27:42-06:00 [TERM="xterm-256color" TTY="/dev/pts/73" COLUMNS="168" LINES="46"]
+
+Disk quotas for user ***** (uid *****):
+     Filesystem   space   quota   limit   grace   files   quota   limit   grace
+*****:/CSUSERS
+                  1344M  10240M  10240M           13974    100k    100k
+
+^[]0;*****@csa2:~/cpsc355/a5^G^[[?2004h[UC *****@csa2 a5] m4 a5b.asm > a5b.s
+^[[?2004l^M^[]0;*****@csa2:~/cpsc355/a5^G^[[?2004h[UC *****@csa2 a5] gcc a5b.s -o a5b
+^[[?2004l^M^[]0;*****@csa2:~/cpsc355/a5^G^[[?2004h[UC *****@csa2 a5] ./a5b 11 22
+^[[?2004l^MNovember 22nd is Fall
+^[]0;*****@csa2:~/cpsc355/a5^G^[[?2004h[UC *****@csa2 a5] ./a5b 2 16
+^[[?2004l^MFebruary 16th is Winter
+^[]0;*****@csa2:~/cpsc355/a5^G^[[?2004h[UC *****@csa2 a5] ./a5b 14 31
+^[[?2004l^MError: Invalid input
+^[]0;*****@csa2:~/cpsc355/a5^G^[[?2004h[UC *****@csa2 a5] ./a5b 2 31
+^[[?2004l^MError: This month doesn't have this number of days
+^[]0;*****@csa2:~/cpsc355/a5^G^[[?2004h[UC *****@csa2 a5] ./a5b
+^[[?2004l^Musage: a5b mm dd
+^[]0;*****@csa2:~/cpsc355/a5^G^[[?2004h[UC *****@csa2 a5] exit
+^[[?2004l^Mexit
+
+Script done on 2024-03-29 23:28:42-06:00 [COMMAND_EXIT_CODE="0"]

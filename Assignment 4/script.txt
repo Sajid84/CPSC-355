@@ -1,0 +1,108 @@
+Script started on 2024-03-15 17:09:24-06:00 [TERM="xterm-256color" TTY="/dev/pts/107" COLUMNS="269" LINES="70"]
+
+Disk quotas for user ***** (uid *****):
+     Filesystem   space   quota   limit   grace   files   quota   limit   grace
+*****:/CSUSERS
+                  1344M  10240M  10240M           13964    100k    100k
+
+^[]0;*****@csa1:~/cpsc355/a4^G^[[?2004h[UC *****@csa1 a4] m4 assign4.asm > assign4.s
+^[[?2004l^M^[]0;*****@csa1:~/cpsc355/a4^G^[[?2004h[UC *****@csa1 a4] gcc assign4.s -o assign4
+^[[?2004l^M^[]0;*****@csa1:~/cpsc355/a4^G^[[?2004h[UC *****@csa1 a4] gdb assign4
+^[[?2004l^M^[[35;1mGNU gdb (GDB) Fedora Linux 13.2-6.fc38^[[m
+Copyright (C) 2023 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <^[[32mhttp://gnu.org/licenses/gpl.html^[[m>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "aarch64-redhat-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+^[[32m<https://www.gnu.org/software/gdb/bugs/>^[[m.
+Find the GDB manual and other documentation resources online at:
+    <^[[32mhttp://www.gnu.org/software/gdb/documentation/^[[m>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from ^[[32massign4^[[m...
+
+This GDB supports auto-downloading debuginfo from the following URLs:
+  <^[[32mhttps://debuginfod.fedoraproject.org/^[[m>
+^[[?2004hEnable debuginfod for this session? (y or [n]) y
+^[[?2004l^MDebuginfod has been enabled.
+To make this setting permanent, add 'set debuginfod enabled on' to .gdbinit.
+^M                                                                                                                                                                                                                                                                             ^M(No debugging symbols found in ^[[32massign4^[[m)
+^[[?2004h(gdb) b newCuboid
+^[[?2004l^MBreakpoint 1 at ^[[34m0x4102e0^[[m
+^[[?2004h(gdb) b printCuboid
+^[[?2004l^MBreakpoint 2 at ^[[34m0x410358^[[m
+^[[?2004h(gdb) display/i$pc^H^H^H $pc^H^H^H^[[C^[[C^[[C^G
+^[[?2004l^M1: x/i $pc
+^[[2m<error: ^[[m^[[2mNo registers.^[[m^[[2m>^[[m
+^[[?2004h(gdb) r
+^[[?2004l^MStarting program: ^[[32m/home/csusers/*****/cpsc355/a4/assign4^[[m
+^M                                                                                                                                                                                                                                                                             ^M^M                                                                                                                                                                                                                                                                             ^M[Thread debugging using libthread_db enabled]
+Using host libthread_db library "^[[32m/lib64/libthread_db.so.1^[[m".
+
+Breakpoint 1, ^[[34m0x00000000004102e0^[[m in ^[[33mnewCuboid^[[m ()
+1: x/i $pc
+=> ^[[34m0x4102e0^[[m <^[[33mnewCuboid^[[m+12>: ^[[32mmov^[[m   ^[[31mw2^[[m, ^[[34m#0x0                   ^[[m^[[37;2m // #0^[[m
+^[[?2004h^[[?2004l^M^[[?2004h(gdb) c
+^[[?2004l^MContinuing.
+
+Breakpoint 1, ^[[34m0x00000000004102e0^[[m in ^[[33mnewCuboid^[[m ()
+1: x/i $pc
+=> ^[[34m0x4102e0^[[m <^[[33mnewCuboid^[[m+12>: ^[[32mmov^[[m   ^[[31mw2^[[m, ^[[34m#0x0                   ^[[m^[[37;2m // #0^[[m
+^[[?2004h^[[?2004l^M^[[?2004h(gdb) c
+^[[?2004l^MContinuing.
+Initial cuboid values:
+
+Breakpoint 2, ^[[34m0x0000000000410358^[[m in ^[[33mprintCuboid^[[m ()
+1: x/i $pc
+=> ^[[34m0x410358^[[m <^[[33mprintCuboid^[[m+12>:       ^[[32mldr^[[m   ^[[31mw0^[[m, ^[[34m0x41045c^[[m <^[[33mmove^[[m+60>
+^[[?2004h^[[?2004l^M^[[?2004h(gdb) c
+^[[?2004l^MContinuing.
+Cuboid first origin = (0, 0)
+        Base width = 2  Base length = 2
+        Height = 3
+        Volume = 12
+
+
+Breakpoint 2, ^[[34m0x0000000000410358^[[m in ^[[33mprintCuboid^[[m ()
+1: x/i $pc
+=> ^[[34m0x410358^[[m <^[[33mprintCuboid^[[m+12>:       ^[[32mldr^[[m   ^[[31mw0^[[m, ^[[34m0x41045c^[[m <^[[33mmove^[[m+60>
+^[[?2004h^[[?2004l^M^[[?2004h(gdb) c
+^[[?2004l^MContinuing.
+Cuboid second origin = (0, 0)
+        Base width = 2  Base length = 2
+        Height = 3
+        Volume = 12
+
+Changed cuboid values:
+
+Breakpoint 2, ^[[34m0x0000000000410358^[[m in ^[[33mprintCuboid^[[m ()
+1: x/i $pc
+=> ^[[34m0x410358^[[m <^[[33mprintCuboid^[[m+12>:       ^[[32mldr^[[m   ^[[31mw0^[[m, ^[[34m0x41045c^[[m <^[[33mmove^[[m+60>
+^[[?2004h^[[?2004l^M^[[?2004h(gdb) c
+^[[?2004l^MContinuing.
+Cuboid first origin = (3, -6)
+        Base width = 2  Base length = 2
+        Height = 3
+        Volume = 12
+
+
+Breakpoint 2, ^[[34m0x0000000000410358^[[m in ^[[33mprintCuboid^[[m ()
+1: x/i $pc
+=> ^[[34m0x410358^[[m <^[[33mprintCuboid^[[m+12>:       ^[[32mldr^[[m   ^[[31mw0^[[m, ^[[34m0x41045c^[[m <^[[33mmove^[[m+60>
+^[[?2004h^[[?2004l^M^[[?2004h(gdb) c
+^[[?2004l^MContinuing.
+Cuboid second origin = (0, 0)
+        Base width = 8  Base length = 8
+        Height = 12
+        Volume = 768
+
+[Inferior 1 (process 2685783) exited with code 0133]
+^[[?2004h^[[?2004l^M^[[?2004h(gdb) q
+^[[?2004l^M^[]0;*****@csa1:~/cpsc355/a4^G^[[?2004h[UC *****@csa1 a4] exit
+^[[?2004l^Mexit
+
+Script done on 2024-03-15 17:12:01-06:00 [COMMAND_EXIT_CODE="0"]
