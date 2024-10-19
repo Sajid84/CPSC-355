@@ -1,6 +1,6 @@
 # CPSC 355 - Computing Machinery I
 These are my assignments for CPSC 355 @ Winter 2024, taught by Leonard Manzara.
-# What were the assignments?
+# Contents
 Each folder contains a .pdf document with the instructions, along with my submissions of course.
 
 Anyway, here's a short description of each assignment at a quick glance.
